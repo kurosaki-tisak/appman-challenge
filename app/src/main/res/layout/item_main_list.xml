@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="item"
+                type="com.devtee.appman.feature.main.MainItem"/>
+
+        <variable
+                name="listener"
+                type="android.view.View.OnClickListener"/>
+    </data>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            tools:text="Title"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:text="@{item.display}"
+            android:textColor="@android:color/black"
+            android:onClick="@{listener}"
+            android:layout_height="wrap_content"/>
+
+</layout>
